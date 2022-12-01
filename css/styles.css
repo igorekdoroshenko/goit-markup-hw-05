@@ -101,7 +101,7 @@ ul {
     list-style: none;
 }
 .btn {
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     color: var(--main-white-color);
     border-radius: 4px;
     border: none;
@@ -114,10 +114,12 @@ ul {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
-    background: #188CE8;
+    background-color: #188CE8;
+    
 }
 .title {
     margin-bottom: 10px;
