@@ -91,6 +91,10 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--main-color);
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .link:hover,
@@ -114,13 +118,17 @@ ul {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+} 
 .btn:hover,
 .btn:focus {
     background-color: #188CE8;
-    
 }
+
 .title {
     margin-bottom: 10px;
 
@@ -235,6 +243,10 @@ ul {
     width: 100%;
     height: 100%;
     color: var(--secondary-color);
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -388,6 +400,10 @@ ul {
     height: 100%;
     color: #afb1b8;
     border-radius: 50%;
+
+    transition-property: color, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .team-social-link:hover,
@@ -428,6 +444,10 @@ ul {
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition-property: color,border;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icons {
@@ -483,6 +503,10 @@ ul {
   letter-spacing: 0.03em;
 
   display: block;
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item{
@@ -498,6 +522,10 @@ ul {
   letter-spacing: 0.03em;
 
   display: block;
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list :hover,
@@ -540,12 +568,16 @@ ul {
     height: 100%;
 
     color: var(--main-white-color);
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background: var(--accent-color);
+    background-color: var(--accent-color);
 }
 .footer-social-icons {
     fill: var(--main-white-color);
@@ -574,6 +606,10 @@ ul {
     line-height: 1.62;
     color: var(--main-color);
     background: var(--background-comand);
+
+    transition-property: color, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-click {
     margin-right: 8px;
@@ -606,6 +642,10 @@ ul {
     flex-basis: calc(100% / 3 - 60px);
     margin-right: 30px;
     margin-bottom: 30px;
+
+    transition-property: box-shadow;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:nth-child(3n) {
     margin-right: 0;
@@ -646,26 +686,51 @@ ul {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: ;
+    transition: opacity 500ms linear, visibility 500ms linear;
 }
 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
-    color: var(--main-white-color);
+    width: 528px;
+    min-height: 521px; 
+    transform: translate(-50%, -50%) scale(1);;
+    background-color: var(--main-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    transition: transform 300ms linear;
+}
+
+.button-icons {
+    fill: currentColor;
 }
 
 .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
     
 .is-hidden {
-
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }   
     
-    
+.backdrop.is-hidden .modal {
+transform: translate(-50%, -50%) scale(0);
+}
     
 
     
