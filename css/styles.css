@@ -38,7 +38,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+img {
+    display: block
+}
 ul {
     margin: 0;
     padding-left: 0;
@@ -50,7 +52,6 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
- 
 }
 
 /* Universal classes */
@@ -96,14 +97,11 @@ ul {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-    
 }
 .link:hover,
 .link:focus {
     color: var(--accent-color);   
 }
-
-
 
 .list {
     list-style: none;
@@ -126,7 +124,6 @@ ul {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 } 
 .btn:hover,
 .btn:focus {
@@ -229,7 +226,6 @@ ul {
     position: absolute;
     background-color: var(--accent-color);
     border-radius: 2px;
-    
 }
 
 .contact-nav {
@@ -278,7 +274,6 @@ ul {
 .contact-icons {
     fill: currentColor;
     margin-right: 10px;
-    
 }
 
 /* -----------HERO----------- */
@@ -367,9 +362,13 @@ ul {
 
 .section-thumb {
     position: relative;
-    
 }
+
 .section-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -382,10 +381,7 @@ ul {
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding-top: 27px;
-    padding-bottom: 27px;
-   
+    text-transform: uppercase;  
 }
 
 /* -----------TEAMS----------- */
@@ -396,15 +392,12 @@ ul {
 }
 .team-list {
     display: flex;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;  
 }
 .team-list .team-items {
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    
 }
 .team-items {
     background: var(--main-white-color);
@@ -449,7 +442,6 @@ ul {
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -466,15 +458,13 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .client-items {
     width: 170px;
     height: 92px;
-
-
 }
+
 .client-items:not(:last-child) {
     margin-right: 30px;
 }
@@ -532,22 +522,21 @@ ul {
 }
 
 .adress-list:not(:last-child) {
-  margin-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .footer-adress {
-  color: var(--main-background);
-  background: var(--background-hiro-footer);
+    display: block;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-
-  display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--main-background);
+    background: var(--background-hiro-footer);
 
     transition-property: color;
     transition-duration: 250ms;
@@ -555,18 +544,17 @@ ul {
 }
 
 .footer-item{
-  color: rgba(255, 255, 255, 0.6);
-  background: var(--background-hiro-footer);
+    display: block;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-
-  display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background: var(--background-hiro-footer);
 
     transition-property: color;
     transition-duration: 250ms;
@@ -594,7 +582,6 @@ ul {
 }
 .footer-social {
     display: flex;
- 
 }
 .footer-social-items {
     width: 44px;
@@ -667,7 +654,6 @@ ul {
 .btn-click :focus {
     color: var(--main-white-color);
     background: var(--accent-color);
-    
 }
 .portfolio-info {
     border: 1px solid #EEEEEE;
@@ -676,7 +662,6 @@ ul {
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
-    
 }
 .portfolio-list {
     display: flex;
