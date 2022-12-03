@@ -620,6 +620,7 @@ ul {
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+    
 }
 
 
@@ -642,6 +643,7 @@ ul {
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .btn-click {
     margin-right: 8px;
@@ -662,10 +664,12 @@ ul {
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .portfolio-item {
